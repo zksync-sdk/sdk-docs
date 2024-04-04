@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types';
 
-const nav = inject<Ref<NavItem[]>>('navigation', ref([]));
-
-const navigation = computed(() => nav!.value.find((item) => item._path.startsWith('/sdk'))?.children || []);
+const navigation = inject<Ref<NavItem[]>>('navigation') ?? [];
 </script>
 
 <template>
