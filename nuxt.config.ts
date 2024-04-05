@@ -1,7 +1,5 @@
 import { getIconCollections } from '@egoist/tailwindcss-icons';
 import { zksyncIcons } from './assets/zksync-icons';
-import path from 'path';
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
@@ -59,9 +57,6 @@ export default defineNuxtConfig({
   nitro: {
     firebase: {
       gen: 2,
-    },
-    output: {
-      publicDir: path.join(__dirname, '.output/public/sdk'),
     },
   },
 });
