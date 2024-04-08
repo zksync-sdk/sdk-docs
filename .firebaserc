@@ -1,8 +1,0 @@
-{
-  "projects": {
-    "default": "zksync-sdk-docs-staging",
-    "production": "zksync-docs"
-  },
-  "targets": {},
-  "etags": {}
-}
