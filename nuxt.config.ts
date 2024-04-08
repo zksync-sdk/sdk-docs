@@ -1,15 +1,17 @@
 import { getIconCollections } from '@egoist/tailwindcss-icons';
 import { zksyncIcons } from './assets/zksync-icons';
-// https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
+
+const landingPage = '/sdk';
+
+const defaultConfig: any = {
   extends: ['@nuxt/ui-pro'],
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/fonts', '@nuxthq/studio', 'nuxt-og-image'],
+  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/fonts', 'nuxt-og-image'],
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
-    'components:extend': (components) => {
-      const globals = components.filter((c) => ['UButton', 'UIcon', 'UKbd'].includes(c.pascalName));
+    'components:extend': (components: any) => {
+      const globals = components.filter((c: any) => ['UButton', 'UIcon'].includes(c.pascalName));
 
-      globals.forEach((c) => (c.global = true));
+      globals.forEach((c: any) => (c.global = true));
     },
   },
   ui: {
@@ -20,9 +22,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  routeRules: {
-    '/': { redirect: '/sdk/getting-started' },
-  },
+  routeRules: {},
   devtools: {
     enabled: true,
   },
@@ -58,5 +58,18 @@ export default defineNuxtConfig({
     firebase: {
       gen: 2,
     },
+    prerender: {
+      routes: ['/sdk'],
+    },
   },
-});
+};
+
+if (process.env.DEV) {
+  defaultConfig.routeRules = {
+    '/': { redirect: landingPage },
+    ...defaultConfig.routeRules,
+  };
+}
+
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig(defaultConfig);
