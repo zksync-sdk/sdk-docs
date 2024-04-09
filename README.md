@@ -1,8 +1,7 @@
-# ZK Sync Docs
+# zkSync SDK Docs
 
-Welcome to the ZK Sync Docs repository. This project serves as the community hub for zkSync, providing comprehensive
-documentation for developers. Whether you're a beginner looking to get started with zkSync or an experienced developer
-seeking advanced guides, you'll find the resources you need here.
+Welcome to the zkSync SDK Docs repository.
+This project is for documenting the SDKs available for zkSync development.
 
 ## Tools used
 
@@ -15,8 +14,8 @@ seeking advanced guides, you'll find the resources you need here.
 
 ## Local Setup
 
-This project uses bun to run, follow the [bun installation instructions](https://bun.sh/docs/installation). Once bun is
-installed, run the following command to install all project dependencies:
+This project uses bun to run, follow the [bun installation instructions](https://bun.sh/docs/installation).
+Once bun is installed, run the following command to install all project dependencies:
 
 ```shell
 bun install
@@ -28,14 +27,6 @@ To run the project locally at `http://localhost:3000`
 
 ```shell
 bun run dev -o
-```
-
-## Local Preview
-
-To locally preview the production build:
-
-```shell
-bun run preview
 ```
 
 ## Lint & Formatting
@@ -60,11 +51,8 @@ bun run lint:prettier
 bun run lint:eslint
 ```
 
-## Contributions
+## Contributing to zkSync SDK Docs
 
-We welcome contributions from the community to zkSync Docs.
-If you're looking for ideas on where to start with contributing, check out the [Contribution Overview](./content/90.contributing-to-documentation/10.index.md).
-To learn more on how to follow best practices when contributing to zkSync Docs,
-refer to the [Contribution Guidelines](./content/90.contributing-to-documentation/20.contribution-guidelines.md).
-If you are writing new content to add to the docs, the [Documentation Styleguide](./content/90.contributing-to-documentation/30.documentation-styleguide.md)
-can provide additional guidance.
+The zkSync SDK Docs is open for editing by maintainers and contributors of 3rd-party SDKs for zkSync.
+Follow the [recommended guidelines for writing content](https://docs.zksync.io/contributing-to-documentation/documentation-styleguide)
+on the zkSync Docs website.
