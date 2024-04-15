@@ -53,6 +53,11 @@ const defaultConfig: any = {
         sepia: 'monokai',
       },
     },
+    head: {
+      sdk: {
+        '10.js': 'JavaScript',
+      },
+    },
   },
   nitro: {
     firebase: {
