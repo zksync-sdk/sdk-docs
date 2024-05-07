@@ -4,7 +4,7 @@ import { zksyncIcons } from './assets/zksync-icons';
 const landingPage = '/sdk';
 
 const defaultConfig: any = {
-  extends: ['@nuxt/ui-pro'],
+  extends: ['@nuxt/ui-pro', ['github:zkSync-Community-Hub/docs-nuxt-layer#staging', { install: true }]],
   modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/fonts', 'nuxt-og-image'],
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)

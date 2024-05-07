@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
-import FooterComponent from './components/FooterComponent.vue';
-import HeaderComponent from './components/HeaderComponent.vue';
 
 const { seo } = useAppConfig();
 
@@ -48,13 +46,15 @@ useSeoMeta({
 });
 
 provide('navigation', navigation);
+
+const links: unknown = [];
 </script>
 
 <template>
   <div>
     <NuxtLoadingIndicator />
 
-    <HeaderComponent />
+    <HeaderComponent :links />
 
     <UMain>
       <NuxtLayout>
