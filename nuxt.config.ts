@@ -1,64 +1,10 @@
-import { getIconCollections } from '@egoist/tailwindcss-icons';
-import { zksyncIcons } from './assets/zksync-icons';
+import type { NuxtConfig } from 'nuxt/schema';
 
 const landingPage = '/sdk';
 
-const defaultConfig: any = {
-  extends: ['@nuxt/ui-pro'],
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/fonts', 'nuxt-og-image'],
-  hooks: {
-    // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
-    'components:extend': (components: any) => {
-      const globals = components.filter((c: any) => ['UButton', 'UIcon'].includes(c.pascalName));
-
-      globals.forEach((c: any) => (c.global = true));
-    },
-  },
-  ui: {
-    icons: {
-      collections: {
-        ...zksyncIcons,
-        ...getIconCollections(['heroicons', 'simple-icons']),
-      },
-    },
-  },
-  routeRules: {},
-  devtools: {
-    enabled: true,
-  },
-  typescript: {
-    strict: false,
-  },
-  content: {
-    highlight: {
-      langs: [
-        'solidity',
-        'go',
-        'jsx',
-        'swift',
-        'python',
-        'rust',
-        'toml',
-        'java',
-        'xml',
-        'graphql',
-        'groovy',
-        'asm',
-        'c++',
-      ],
-      theme: {
-        default: 'github-light',
-        light: 'github-light',
-        dark: 'github-dark',
-        sepia: 'monokai',
-      },
-    },
-    head: {
-      sdk: {
-        '10.js': 'JavaScript',
-      },
-    },
-  },
+const defaultConfig: NuxtConfig = {
+  extends: [['github:matter-labs/docs-nuxt-template#development', { install: true }]],
+  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/fonts', 'nuxt-og-image', '@nuxt/eslint'],
   nitro: {
     firebase: {
       gen: 2,

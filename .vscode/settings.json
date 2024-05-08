@@ -9,5 +9,6 @@
   "files.eol": "\n",
   "[markdown]": {
     "editor.wordWrap": "on"
-  }
+  },
+  "eslint.experimental.useFlatConfig": true
 }
