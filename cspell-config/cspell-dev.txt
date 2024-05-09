@@ -6,3 +6,4 @@ NVMe
 nuxtdotjs
 fontaine
 diataxis
+tokio
