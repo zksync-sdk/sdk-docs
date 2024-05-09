@@ -8,7 +8,16 @@
   "editor.insertSpaces": true,
   "files.eol": "\n",
   "[markdown]": {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnSave": true,
+    "editor.suggest.showWords": false,
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    },
+    "editor.tabCompletion": "onlySnippets"
   },
   "eslint.experimental.useFlatConfig": true
 }
