@@ -66,7 +66,7 @@ const links = computed(() =>
         :value="page"
       />
 
-      <hr v-if="surround?.length">
+      <hr v-if="surround?.length" />
 
       <UContentSurround :surround="surround" />
     </UPageBody>
