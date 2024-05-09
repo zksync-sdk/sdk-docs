@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "zksync-docs-staging-5eb09",
-    "prod": "zksync-docs"
+    "default": "zksync-sdk-docs-staging",
+    "prod": "sdk-docs-7b113"
   },
   "etags": {}
 }
