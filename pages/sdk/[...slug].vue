@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { ParsedContent } from '@nuxt/content/types';
 import { withoutTrailingSlash } from 'ufo';
 
 definePageMeta({
@@ -31,12 +32,12 @@ useSeoMeta({
 });
 
 defineOgImage({
-  component: 'Docs',
+  component: 'OgImageSDK',
   title: page.value.title,
   description: page.value.description,
 });
 
-const headline = computed(() => findPageHeadline(page.value as any));
+const headline = computed(() => findPageHeadline(page.value as ParsedContent));
 
 const links = computed(() =>
   [
