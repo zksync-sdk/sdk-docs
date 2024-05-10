@@ -16,7 +16,7 @@ which is [available under the `examples/` directory][code] in the [`zksync-web3-
 ## Prerequisites
 
 This tutorial assumes that you know how to create a rust project and add [`zksync-web3-rs`][repo] as a dependency.
-We recommend having followed the [Rust SDK Getting started](./getting-started.md) tutorial first.
+We recommend having followed the [Rust SDK Getting started](./00.getting-started.md) tutorial first.
 
 Also, since our SDK does not provide wrappers for the compiler, building the `Greeter` contract is out of the scope
 of this tutorial. We will provide the ABI and compilation output together with the source code for the smart contract.
