@@ -31,7 +31,7 @@ provide('navigation', navigation);
 
 <template>
   <div>
-    <HeaderComponent />
+    <HeaderComponent :links="[]" />
 
     <UMain>
       <UContainer>
