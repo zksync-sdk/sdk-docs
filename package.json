@@ -32,7 +32,6 @@
   },
   "scripts": {
     "build": "nuxt generate",
-    "generate": "DEV=true nuxt generate",
     "dev": "DEV=true nuxt dev",
     "preview": "nuxt preview",
     "lint:spelling": "cspell content/**/*.md --config=./cspell.json",
