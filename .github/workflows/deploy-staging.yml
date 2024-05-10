@@ -25,6 +25,6 @@ jobs:
       - uses: matter-labs/action-hosting-deploy@main
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_ZKSYNC_DOCS_STAGING }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_ZKSYNC_SDK_DOCS_STAGING }}"
           projectId: zksync-sdk-docs-staging
           channelId: live
