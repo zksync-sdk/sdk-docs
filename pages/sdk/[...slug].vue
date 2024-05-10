@@ -32,7 +32,7 @@ useSeoMeta({
 });
 
 defineOgImage({
-  component: 'Docs',
+  component: 'OgImageSDK',
   title: page.value.title,
   description: page.value.description,
 });
