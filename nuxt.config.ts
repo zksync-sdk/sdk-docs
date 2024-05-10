@@ -3,12 +3,9 @@ import type { NuxtConfig } from 'nuxt/schema';
 const landingPage = '/sdk';
 
 const defaultConfig: NuxtConfig = {
-  extends: [['github:matter-labs/docs-nuxt-template#development', { install: true }]],
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/fonts', 'nuxt-og-image', '@nuxt/eslint'],
+  extends: [['github:matter-labs/docs-nuxt-template', { install: true }]],
+  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/eslint'],
   nitro: {
-    firebase: {
-      gen: 2,
-    },
     prerender: {
       routes: ['/sdk'],
     },
