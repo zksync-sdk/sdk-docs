@@ -69,12 +69,10 @@ const defaultConfig: any = {
   },
 };
 
-if (process.env.DEV) {
-  defaultConfig.routeRules = {
-    '/': { redirect: landingPage },
-    ...defaultConfig.routeRules,
-  };
-}
+defaultConfig.routeRules = {
+  '/': { redirect: landingPage },
+  ...defaultConfig.routeRules,
+};
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig(defaultConfig);
