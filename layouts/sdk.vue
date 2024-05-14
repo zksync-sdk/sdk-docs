@@ -1,9 +1,15 @@
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content/dist/runtime/types';
+const route = useRoute();
 
-const nav = inject<Ref<NavItem[]>>('navigation', ref([]));
+const { data: navigation } = await useAsyncData(`${route.path}-sidenav`, () => {
+  const query = queryContent().where({
+    _path: { $contains: route.path },
+    _extension: 'md',
+    _partial: false,
+  });
 
-const navigation = computed(() => nav!.value.find((item) => item._path.startsWith('/sdk'))?.children || []);
+  return fetchContentNavigation(query);
+});
 </script>
 
 <template>
