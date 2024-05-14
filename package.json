@@ -38,7 +38,7 @@
     "build": "nuxt generate",
     "dev": "DEV=true nuxt dev",
     "preview": "nuxt preview",
-    "lint:spelling": "cspell content/**/*.md --config=./cspell.json",
+    "lint:spelling": "cspell **/*.md --config=./cspell.json",
     "lint:markdown": "markdownlint-cli2 \"content/**/*.md\" --config \".markdownlint.json\"",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",

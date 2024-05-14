@@ -8,11 +8,6 @@ export default defineAppConfig({
     siteName: 'ZKsync SDK Docs',
   },
   header: {
-    logo: {
-      alt: '',
-      light: '/logos/zksync_logo_black.svg',
-      dark: '/logos/zksync_logo.svg',
-    },
     links: [
       {
         icon: 'i-simple-icons-github',
