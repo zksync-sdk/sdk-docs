@@ -52,7 +52,7 @@ provide('navigation', navigation);
   <div>
     <NuxtLoadingIndicator />
 
-    <HeaderComponent :links="[]" />
+    <HeaderComponent />
 
     <UMain>
       <NuxtLayout>
