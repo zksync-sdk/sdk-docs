@@ -24,7 +24,6 @@ useHead({
     },
     { name: 'author', content: 'https://matter-labs.io' },
   ],
-  link: [{ rel: 'icon', href: '/favicon.ico' }],
   htmlAttrs: {
     lang: 'en',
   },
