@@ -3,6 +3,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+env:
+  NUXT_SITE_ENV: staging # used for NuxtSEO to disable things like indexing on staging
+
 jobs:
   build_and_preview:
     env:
@@ -22,10 +25,6 @@ jobs:
 
       - name: "Deploy target: staging"
         run: bun run build
-
-      - uses: untitaker/hyperlink@0.1.32
-        with:
-          args: .output/public/ --sources content/
 
       - name: "Deploy preview"
         uses: matter-labs/action-hosting-deploy@main
