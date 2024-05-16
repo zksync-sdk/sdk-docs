@@ -1,11 +1,22 @@
 <script setup lang="ts">
-// useSeoMeta({
-//   titleTemplate: '%s - Nuxt UI Pro',
-//   ogImage: 'https://ui.nuxt.com/social-card-pro.png',
-//   twitterImage: 'https://ui.nuxt.com/social-card-pro.png',
-// });
+useHead({
+  meta: [
+    {
+      'http-equiv': 'refresh',
+      content: '0; url=/sdk',
+    },
+  ],
+});
 </script>
 
 <template>
-  <NuxtPage />
+  <UPageError
+    :status="200"
+    name="SDK Docs"
+    message="This is not the page you are looking for. 👋"
+    :clear-button="{
+      label: 'Go to SDK Landing Page',
+      to: '/sdk',
+    }"
+  />
 </template>

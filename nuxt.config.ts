@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/sdk'],
+      routes: ['/', '/sdk'],
     },
   },
   routeRules: {
