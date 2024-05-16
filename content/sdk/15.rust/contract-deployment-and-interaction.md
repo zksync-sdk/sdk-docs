@@ -8,15 +8,17 @@ This is what we're going to do:
 - Call a `view` method that retrieves the greeting message.
 - Perform a transaction that updates the greeting message.
 
-:::info Project available as an example in the SDK REPO
+::callout{icon="i-heroicons-information-circle" color="blue"}
+**Project available as an example in the SDK REPO**
+<br />
 This entire tutorial can be easily run using `cargo run --example contract-deployment`
 which is [available under the `examples/` directory][code] in the [`zksync-web3-rs`][repo].
-:::
+::
 
 ## Prerequisites
 
 This tutorial assumes that you know how to create a rust project and add [`zksync-web3-rs`][repo] as a dependency.
-We recommend having followed the [Rust SDK Getting started](./00.getting-started.md) tutorial first.
+We recommend having followed the [Rust SDK Getting started](/sdk/rust/getting-started) tutorial first.
 
 Also, since our SDK does not provide wrappers for the compiler, building the `Greeter` contract is out of the scope
 of this tutorial. We will provide the ABI and compilation output together with the source code for the smart contract.
@@ -191,6 +193,95 @@ To do this, we call the greet() method again and display the updated  greeting m
         .unwrap();
 
     println!("greet: {}", greet[0]);
+}
+```
+
+## Advanced Interaction with Smart Contracts Using Rust
+In this section, we will explore a more complex scenario involving interactions with a smart contract.
+We will demonstrate how to read a struct called proposal comprised of multiple fields of different types
+including different integer types.
+We also introduce a nested map to record the status of what we call `voting` on `proposal`
+and demonstrate how you can retrieve its value for a particular address.
+
+### Smart Contract Setup in Solidity
+First, let's suppose the corresponding data structures and mappings are defined as follows in your Solidity contract:
+
+```solidity
+// Defines a proposal specifying payment amount, target address, vote count, and execution status.
+struct Proposal {
+    address target;
+    uint256 amount;
+    uint8 votes;
+    bool executed;
+}
+// Mapping from a unique identifier (bytes32) to a Proposal.
+mapping(bytes32 => Proposal) public proposals;
+// Nested mapping to track whether an address has voted on a proposal and the content of the vote (yes/no).
+mapping(address => mapping(bytes32 => bool)) public voted;
+```
+
+### Contract Interaction in Rust
+To interact with these contract elements, we use the ethers-rs library.
+Here's how to set up the Rust structures and make calls to the contract:
+
+```rust
+use ethers::abi::Uint;
+use ethers::contract::EthAbiType;
+use ethers::types::Address;
+
+// Rust representation of the Solidity Proposal struct.
+// Note `uint8` type for `votes` is also seen as `Uint` here.
+#[derive(Debug, Default, PartialEq, Eq, EthAbiType)]
+pub struct Proposal {
+    target: Address,
+    amount: Uint,
+    votes: Uint,
+    executed: bool,
+}
+
+// ABI strings for interacting with the contract functions.
+pub const CONTRACT_PROPOSALS_CALL: &str = "proposals(bytes32)(address,uint256,uint8,bool)";
+// Note how the public getter for a nested map in solidity is constructed below.
+pub const CONTRACT_VOTED_CALL: &str = "voted(address,bytes32)(bool)";
+```
+
+### Calling the Contract
+Here is an example of how you can read a proposal and check the voting status:
+
+```rust
+use ethers::abi::Detokenize;
+
+async fn interact_with_contract() {
+    // Construct parameters for the proposals call.
+    let proposals_parameters = vec![a_unique_proposal_identifier_for_our_example.clone()];
+    let proposals_call_request = CallRequest::new(
+        contract_address,
+        CONTRACT_PROPOSALS_CALL.to_string()
+    ).function_parameters(proposals_parameters);
+
+    // Make the call to fetch the proposal details.
+    let proposal_tokens = ZKSProvider::call(era_provider.as_ref(), &proposals_call_request)
+        .await
+        .unwrap();
+    let proposal = Proposal::from_tokens(proposal_tokens)?;
+    println!("proposal: {:?}", proposal);
+
+    // Assume you are checking if your own wallet has voted.
+    let voted_parameters = vec![
+        hex::encode(zks_wallet.l2_address()),
+        a_unique_proposal_identifier_for_our_example.clone(),
+    ];
+    let voted_call_request = CallRequest::new(
+        contract_address,
+        CONTRACT_VOTED_CALL.to_string()
+    ).function_parameters(voted_parameters);
+
+    // Make the call to check the voting status.
+    let voted_tokens = ZKSProvider::call(era_provider.as_ref(), &voted_call_request)
+        .await
+        .unwrap();
+    let voted = bool::from_tokens(voted_tokens).unwrap();
+    println!("I have voted on the proposal? {}", voted);
 }
 ```
 
