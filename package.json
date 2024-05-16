@@ -7,6 +7,7 @@
   "author": "Matter Labs",
   "homepage": "https://zksync.io",
   "devDependencies": {
+    "@nuxtjs/seo": "^2.0.0-rc.10",
     "@types/bun": "^1.0.8",
     "@vue/test-utils": "^2.4.5",
     "cspell": "^8.6.0",
