@@ -1,7 +1,9 @@
+!HardHat
 Aave
 arithmetization
 BoxUups
 Buterin
+chainid
 Dappradar
 DRPC
 Echoo
@@ -12,7 +14,6 @@ EVM
 evmla
 geth
 gwei
-!HardHat
 IERC
 inversed
 keccak
@@ -39,6 +40,7 @@ solc
 Tevaera
 Unifra
 Upgradability
+usdc
 uups
 UUPS
 validium
@@ -47,6 +49,7 @@ viem
 Vitalik
 vyper
 Weth
+weth
 YaspFi
 Yul
 Zaverucha

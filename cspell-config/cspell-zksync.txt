@@ -15,3 +15,7 @@ zksync
 zkSync
 zksync-cli
 zkvyper
+
+// devs
+dutterbutter
+itsacoyote

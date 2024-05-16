@@ -7,8 +7,8 @@ This project is for documenting the SDKs available for zkSync development.
 
 - [Vue](https://vuejs.org/)
 - [Nuxt](https://nuxt.com/)
-- [NuxtContent](https://content.nuxt.com/)
-- [NuxtUI & NuxtUI Pro](https://ui.nuxt.com/)
+- [Nuxt Content](https://content.nuxt.com/)
+- [Nuxt UI & Nuxt UI Pro](https://ui.nuxt.com/)
 - [Tailwind](https://tailwindcss.com/)
 - [Bun](https://bun.sh/)
 
