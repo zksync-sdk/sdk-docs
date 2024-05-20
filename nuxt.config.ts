@@ -11,9 +11,4 @@ export default defineNuxtConfig({
       app: 'sdk',
     },
   },
-  $development: {
-    routeRules: {
-      '/': { redirect: '/sdk' },
-    },
-  },
 });
