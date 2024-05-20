@@ -11,12 +11,9 @@ export default defineNuxtConfig({
       app: 'sdk',
     },
   },
-  nitro: {
-    prerender: {
-      routes: ['/', '/sdk'],
+  $development: {
+    routeRules: {
+      '/': { redirect: '/sdk' },
     },
-  },
-  routeRules: {
-    '/': { redirect: '/sdk' },
   },
 });
