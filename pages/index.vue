@@ -1,14 +1,3 @@
-<script setup lang="ts">
-useHead({
-  meta: [
-    {
-      'http-equiv': 'refresh',
-      content: '0; url=/sdk',
-    },
-  ],
-});
-</script>
-
 <template>
   <UPageError
     :status="200"
