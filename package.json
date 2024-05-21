@@ -6,6 +6,12 @@
   "license": "MIT",
   "author": "Matter Labs",
   "homepage": "https://zksync.io",
+  "main": "./nuxt.config.ts",
+  "files": [
+    "content",
+    "pages",
+    "layouts"
+  ],
   "devDependencies": {
     "@nuxtjs/seo": "^2.0.0-rc.10",
     "@types/bun": "^1.0.8",
