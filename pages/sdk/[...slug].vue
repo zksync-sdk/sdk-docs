@@ -29,6 +29,7 @@ useSeoMeta({
   ogTitle: `${page.value.title} - ${seo?.siteName}`,
   description: page.value.description,
   ogDescription: page.value.description,
+  twitterDescription: page.value.description,
 });
 
 defineOgImage({
