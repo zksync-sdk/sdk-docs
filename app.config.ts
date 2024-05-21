@@ -7,22 +7,4 @@ export default defineAppConfig({
   seo: {
     siteName: 'ZKsync SDK Docs',
   },
-  header: {
-    links: [
-      {
-        icon: 'i-simple-icons-github',
-        to: 'https://github.com/zksync-sdk/sdk-docs',
-        target: '_blank',
-        'aria-label': 'ZKsync SDK Docs on GitHub',
-        title: 'ZKsync SDK Docs on GitHub',
-      },
-    ],
-  },
-  toc: {
-    title: 'Table of Contents',
-    bottom: {
-      title: 'Community',
-      edit: 'https://github.com/zksync-sdk/sdk-docs/edit/staging/content',
-    },
-  },
 });
