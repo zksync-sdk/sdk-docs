@@ -6,6 +6,10 @@ on:
   push:
     branches: [ main ]
 
+env:
+  HUSKY: 0
+  CI: true
+
 jobs:
   release:
     if: ${{ github.event.repository.full_name == github.repository }} && {{ !contains(github.event.head_commit.message, "skip ci") }}
@@ -27,6 +31,4 @@ jobs:
       - name: "Semantic release"
         run: bunx semantic-release
         env:
-          HUSKY: 0
-          CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
