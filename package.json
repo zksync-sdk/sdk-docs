@@ -53,7 +53,7 @@
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
     "fix:prettier": "prettier --write .",
-    "prepare": "husky",
+    "prepare": "node .husky/install.mjs",
     "postinstall": "nuxt prepare",
     "ci:check": "bun run lint:eslint && bun run lint:prettier && bun run lint:spelling && bun run lint:markdown",
     "release": "semantic-release"

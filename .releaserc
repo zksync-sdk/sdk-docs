@@ -1,6 +1,5 @@
 {
   "branches": "main",
-  "dryRun": true,
   "debug": true,
   "tagFormat": "${version}",
   "addReleases": "top",

@@ -4,6 +4,8 @@ on:
     branches: [staging]
 
 env:
+  CI: true
+  HUSKY: 0
   NUXT_SITE_ENV: staging # used for NuxtSEO to disable things like indexing on staging
 
 jobs:
