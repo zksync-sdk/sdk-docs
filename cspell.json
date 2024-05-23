@@ -1,6 +1,17 @@
 {
   "language": "en",
-  "ignorePaths": ["node_modules/**", ".github/**", ".firebase/**", ".yarn/**", "dist/**", ".vscode/**"],
+  "ignorePaths": [
+    "node_modules/**",
+    ".github/**",
+    ".firebase/**",
+    ".yarn/**",
+    "dist/**",
+    ".vscode/**",
+    ".output/**",
+    ".husky/**",
+    ".nuxt/**",
+    "cspell-config/**"
+  ],
   "caseSensitive": true,
   "dictionaries": [
     "bash",
