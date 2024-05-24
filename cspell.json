@@ -1,6 +1,21 @@
 {
   "language": "en",
-  "ignorePaths": ["node_modules/**", ".github/**", ".firebase/**", ".yarn/**", "dist/**", ".vscode/**"],
+  "ignorePaths": [
+    "bun.lockb",
+    "*.css",
+    "*.config.*",
+    "node_modules/**",
+    ".github/**",
+    ".firebase/**",
+    ".yarn/**",
+    "dist/**",
+    ".vscode/**",
+    "cspell-config/**",
+    "package.json",
+    ".output/**",
+    ".husky/**",
+    ".nuxt/**"
+  ],
   "caseSensitive": true,
   "dictionaries": [
     "bash",
@@ -48,5 +63,5 @@
     }
   ],
   "allowCompoundWords": true,
-  "flagWords": ["hte", "hve"]
+  "flagWords": ["hte", "hve", "teh", "cna"]
 }
