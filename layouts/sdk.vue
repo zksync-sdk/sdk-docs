@@ -13,7 +13,7 @@ const navigation = computed(() => nav!.value.find((item) => item._path.startsWit
         <UAside>
           <UNavigationTree
             :links="mapContentNavigation(navigation)"
-            default-open
+            default-open-all
             :multiple="false"
           />
         </UAside>
