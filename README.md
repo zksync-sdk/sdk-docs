@@ -1,9 +1,30 @@
 # zkSync SDK Docs
 
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE-MIT)
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-orange)](LICENSE-APACHE)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange)](CONTRIBUTING.md)
+[![X (formerly Twitter) Follow](https://badgen.net/badge/twitter/@zksyncDevs/1DA1F2?icon&label)](https://x.com/zksyncDevs)
+
 Welcome to the zkSync SDK Docs repository.
 This project is for documenting the SDKs available for zkSync development.
 
-## Tools used
+## 🚀 Quick Start
+
+1. **Install Bun:** Follow the [installation instructions](https://bun.sh/docs/installation).
+2. **Install Dependencies:**
+
+   ```sh
+   bun install
+   ```
+
+3. **Run Locally:** Start the development server at `http://localhost:3000`.
+
+   ```sh
+   bun run dev
+   ```
+
+## 🛠️ Built With
 
 - [Vue](https://vuejs.org/)
 - [Nuxt](https://nuxt.com/)
@@ -12,28 +33,27 @@ This project is for documenting the SDKs available for zkSync development.
 - [Tailwind](https://tailwindcss.com/)
 - [Bun](https://bun.sh/)
 
-## Local Setup
+## 👀 Local Preview
 
-This project uses bun to run, follow the [bun installation instructions](https://bun.sh/docs/installation).
-Once bun is installed, run the following command to install all project dependencies:
-
-```shell
-bun install
-```
-
-## Development
-
-To run the project locally at `http://localhost:3000`
+To locally preview the production build, first run `bun run build` to build the project, then run the following:
 
 ```shell
-bun run dev -o
+bun run preview
 ```
 
-## Lint & Formatting
+## ✨ Lint & Formatting
 
 This project provides lint commands to check the project.
 
-### Markdown Linting
+### Run CI Checks ✔️
+
+This command will run all of the lint commands together.
+
+```shell
+bun run ci:check
+```
+
+### Markdown Linting 📝
 
 Markdown files are found in the `/content` directory. The following lint commands will run within that directory:
 
@@ -42,16 +62,27 @@ bun run lint:spelling
 bun run lint:markdown
 ```
 
-### Linting
+### Linting 🧹
 
-The following commands are available to run linting on the project:
+The following commands are available to run code linting on the project:
 
 ```shell
 bun run lint:prettier
 bun run lint:eslint
 ```
 
-## Contributing to zkSync SDK Docs
+## 📜 Conventional Commits
+
+We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) specification.
+Make sure your commit messages adhere to these guidelines.
+
+For documentation changes, we recommend using the "docs:" tag. For example:
+
+```sh
+git commit -m "docs: fix spelling error"
+```
+
+## 🤝 Contributions
 
 The zkSync SDK Docs is open for editing by maintainers and contributors of 3rd-party SDKs for zkSync.
 Follow the [recommended guidelines for writing content](https://docs.zksync.io/contributing-to-documentation/documentation-styleguide)
