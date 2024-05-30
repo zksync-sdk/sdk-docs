@@ -19,7 +19,7 @@ const { data: surround } = await useAsyncData(
   () =>
     queryContent('/sdk')
       .where({ _extension: 'md', navigation: { $ne: false } })
-      .only(['title', 'description', 'menuTitle', '_path'])
+      .only(['title', 'description', '_path'])
       .findSurround(withoutTrailingSlash(route.path)),
   { default: () => [] }
 );
@@ -55,7 +55,7 @@ const links = computed(() =>
 <template>
   <UPage v-if="page">
     <UPageHeader
-      :title="page.menuTitle || page.title"
+      :title="page.title"
       :description="page.description"
       :links="page.links"
       :headline="headline"
