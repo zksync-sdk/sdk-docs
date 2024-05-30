@@ -71,17 +71,6 @@ bun run lint:prettier
 bun run lint:eslint
 ```
 
-## 📜 Conventional Commits
-
-We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) specification.
-Make sure your commit messages adhere to these guidelines.
-
-For documentation changes, we recommend using the "docs:" tag. For example:
-
-```sh
-git commit -m "docs: fix spelling error"
-```
-
 ## 🤝 Contributions
 
 The zkSync SDK Docs is open for editing by maintainers and contributors of 3rd-party SDKs for zkSync.
