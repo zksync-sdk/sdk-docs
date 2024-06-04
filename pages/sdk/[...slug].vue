@@ -51,7 +51,7 @@ const links = computed(() =>
     {
       icon: 'i-heroicons-chat-bubble-oval-left-ellipsis',
       label: 'Share feedback',
-      to: `https://github.com/zksync-sdk/sdk-docs/issues/new?&template=feedback&page=https://docs.zksync.io${page?.value?._path}`,
+      to: `https://github.com/zksync-sdk/sdk-docs/issues/new?&template=feedback.yml&page=https://docs.zksync.io${page?.value?._path}&title=[Feedback]%3A%20`,
       target: '_blank',
     },
     ...(toc?.bottom?.links || []),
