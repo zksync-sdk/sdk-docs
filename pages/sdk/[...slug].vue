@@ -45,7 +45,7 @@ const links = computed(() =>
     {
       icon: 'i-heroicons-pencil-square',
       label: 'Edit this page',
-      to: `https://github.com/zksync-sdk/sdk-docs/edit/staging/content/${page?.value?._file}`,
+      to: `https://github.com/zksync-sdk/sdk-docs/edit/main/content/${page?.value?._file}`,
       target: '_blank',
     },
     {
