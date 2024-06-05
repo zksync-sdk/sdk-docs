@@ -55,7 +55,6 @@ const links = computed(() =>
       to: `https://github.com/zksync-sdk/sdk-docs/issues/new?&template=feedback.yml&page=https://docs.zksync.io/sdk&title=[Feedback]%3A%20`,
       target: '_blank',
     },
-
     {
       icon: 'i-heroicons-chat-bubble-bottom-center-text',
       label: 'FAQ',
@@ -73,7 +72,6 @@ const links = computed(() =>
       label: 'Troubleshooting',
       to: `/sdk/troubleshooting/troubleshooting`,
     },
-
     ...(toc?.bottom?.links || []),
   ].filter(Boolean)
 );
