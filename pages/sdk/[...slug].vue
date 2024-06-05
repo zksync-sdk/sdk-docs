@@ -67,7 +67,7 @@ const links = computed(() =>
     {
       icon: 'i-heroicons-shield-check',
       label: 'Troubleshooting',
-      to: `/sdk/troubleshooting/troubleshooting`,
+      to: `/sdk/troubleshooting`,
     },
     ...(toc?.bottom?.links || []),
   ].filter(Boolean)
