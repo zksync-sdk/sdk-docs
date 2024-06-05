@@ -1,0 +1,13 @@
+# This CODEOWNERS file sets the individuals responsible for code in the sdk-docs repository
+# They will be requested for review when someone opens a pull request
+
+# @zksync-sdk/devxp are owners for all of the project *except* for /content and /public
+
+* @zksync-sdk/devxp
+/content/ @zksync-sdk/devxp @zksync-sdk/txfusion
+/public/ @zksync-sdk/devxp @zksync-sdk/txfusion
+
+# You can also specify code owners for specific directories or files
+# For example
+# /src/ @developer1 @developer2
+# /docs/ @documenter

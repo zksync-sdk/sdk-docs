@@ -1,0 +1,67 @@
+{
+  "language": "en",
+  "ignorePaths": [
+    "bun.lockb",
+    "*.css",
+    "*.config.*",
+    "node_modules/**",
+    ".github/**",
+    ".firebase/**",
+    ".yarn/**",
+    "dist/**",
+    ".vscode/**",
+    "cspell-config/**",
+    "package.json",
+    ".output/**",
+    ".husky/**",
+    ".nuxt/**"
+  ],
+  "caseSensitive": true,
+  "dictionaries": [
+    "bash",
+    "cpp",
+    "cryptocurrencies",
+    "docker",
+    "css",
+    "en_GB",
+    "en_US",
+    "filetypes",
+    "fullstack",
+    "git",
+    "golang",
+    "html",
+    "java",
+    "misc",
+    "node",
+    "npm",
+    "npm",
+    "nuxt",
+    "python",
+    "rust",
+    "softwareTerms",
+    "swift",
+    "typescript",
+    "dict-zksync",
+    "dict-blockchain",
+    "dict-dev"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "dict-zksync",
+      "addWords": true,
+      "path": "./cspell-config/cspell-zksync.txt"
+    },
+    {
+      "name": "dict-blockchain",
+      "addWords": true,
+      "path": "./cspell-config/cspell-blockchain.txt"
+    },
+    {
+      "name": "dict-dev",
+      "addWords": true,
+      "path": "./cspell-config/cspell-dev.txt"
+    }
+  ],
+  "allowCompoundWords": true,
+  "flagWords": ["hte", "hve", "teh", "cna"]
+}
