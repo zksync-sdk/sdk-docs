@@ -17,16 +17,41 @@ Take a look at the [migration guide](/sdk/js/ethers/v6/migration) if you are mig
 
 ### Installation
 
-To install SDK for zkSync Era, run the command below in your terminal.
+To install SDK for zkSync Era, follow the process below:
+
+#### Step 1: Create a Folder
+
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to create your project folder.
+3. Create a new folder for your project:
+
+    ```sh
+    mkdir zkSyncProject
+    cd zkSyncProject
+    ```
+
+#### Step 2: Initialize a Node.js Project
+
+1. Inside your project folder, initialize a new Node.js project:
+
+    ```sh
+    npm init -y
+    ```
+
+    This will create a `package.json` file.
+
+#### Step 3: Install Required Packages
+
+1. Install `zksync-ethers` and `ethers` packages:
 
 ::code-group
 
-```bash [ethers-v5]
+```sh [ethers-v5]
 yarn add zksync-ethers@5
 yarn add ethers@5 # ethers is a peer dependency of zksync-ethers
 ```
 
-```bash [ethers-v6]
+```sh [ethers-v6]
 yarn add zksync-ethers
 yarn add ethers@6 # ethers is a peer dependency of zksync-ethers
 ```
@@ -69,27 +94,6 @@ to: https://join.zksync.dev
 title: Support Desk
 icon: i-heroicons-computer-desktop
 to: https://zksync.io/contact
----
-::
-::card
----
-title: Troubleshooting
-icon: i-heroicons-shield-check
-to: /sdk/troubleshooting/troubleshooting
----
-::
-::card
----
-title: FAQ
-icon: i-heroicons-chat-bubble-bottom-center-text
-to: /sdk/faq
----
-::
-::card
----
-title: Glossary
-icon: i-heroicons-book-open
-to: /sdk/glossary
 ---
 ::
 ::
