@@ -44,7 +44,7 @@ const links = computed(() =>
   [
     {
       icon: 'i-heroicons-pencil-square',
-      label: 'Suggest changes to this page',
+      label: 'Edit this page',
       to: `https://github.com/zksync-sdk/sdk-docs/edit/main/content/${page?.value?._file}`,
       target: '_blank',
     },
