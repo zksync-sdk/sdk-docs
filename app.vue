@@ -17,11 +17,11 @@ useSeoMeta({
   ogUrl: 'https://docs.zksync.io/',
   ogImageAlt: 'Hyperscaling Ethereum with ZK tech.',
   ogDescription:
-    'zkSync Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and ZK Chains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.',
+    'ZKsync Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and ZK Chains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.',
   description:
-    'zkSync Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and ZK Chains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.',
+    'ZKsync Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and ZK Chains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.',
   twitterDescription:
-    'zkSync Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and ZK Chains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.',
+    'ZKsync Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and ZK Chains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.',
   twitterTitle: `%s`,
   twitterCard: 'summary_large_image',
   twitterSite: '@zksync',
@@ -32,7 +32,7 @@ useSeoMeta({
 defineOgImage({
   component: 'OgImageZK',
   title: seo?.siteName,
-  description: 'Access detailed guides, references and resources that will help you build with zkSync Era.',
+  description: 'Access detailed guides, references and resources that will help you build with ZKsync Era.',
 });
 </script>
 
