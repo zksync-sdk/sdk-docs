@@ -1,12 +1,19 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+
 interface Select {
   id: string;
   label: string;
   href: string;
   icon?: string;
 }
+const selected = ref<Select>({
+  id: '',
+  label: '',
+  href: '',
+  icon: '',
+});
 
 const selectors: Select[] = [
   {
@@ -47,13 +54,14 @@ const selectors: Select[] = [
   },
 ];
 
-const selected = ref(selectors[0]);
+selected.value = selectors[0];
+
 const router = useRouter();
 
-const handleSelect = (option: { href: string; target?: string }) => {
-  selected.value = option; // Update the selected item
+const handleSelect = (option: Select) => {
+  selected.value = option;
   if (option.href.startsWith('http')) {
-    window.open(option.href, option.target || '_self');
+    window.open(option.href, '_blank');
   } else {
     router.push(option.href);
   }
@@ -65,7 +73,7 @@ const handleSelect = (option: { href: string; target?: string }) => {
     <button class="dropdown-toggle">
       <template v-if="selected.icon">
         <UIcon
-          :name="selected.icon as string"
+          :name="selected.icon"
           class="h-5 w-5"
         />
       </template>
@@ -73,17 +81,17 @@ const handleSelect = (option: { href: string; target?: string }) => {
     </button>
     <ul class="dropdown-menu">
       <li
-        v-for="Select in selectors"
-        :key="Select.id"
-        @click="handleSelect(Select)"
+        v-for="selector in selectors"
+        :key="selector.id"
+        @click="handleSelect(selector)"
       >
-        <template v-if="Select.icon">
+        <template v-if="selector.icon">
           <UIcon
-            :name="Select.icon as string"
+            :name="selector.icon"
             class="h-5 w-5"
           />
         </template>
-        {{ Select.label }}
+        {{ selector.label }}
       </li>
     </ul>
   </div>
@@ -96,7 +104,7 @@ const handleSelect = (option: { href: string; target?: string }) => {
   width: 100%;
 }
 .dropdown-toggle {
-  background-color: #f9f9f9;
+  background-color: inherit;
   width: 100%;
   padding: 10px;
   cursor: pointer;
