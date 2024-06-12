@@ -11,11 +11,12 @@ zkforge
 zkout
 zksolc
 zkstack
-!ZKsync
+ZKsync
 zksync
-zkSync
+!zkSync
 zksync-cli
 zkvyper
+zkSync2
 
 // devs
 dutterbutter

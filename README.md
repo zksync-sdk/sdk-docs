@@ -1,4 +1,4 @@
-# zkSync SDK Docs
+# ZKsync SDK Docs
 
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE-MIT)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-orange)](LICENSE-APACHE)
@@ -6,8 +6,8 @@
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange)](CONTRIBUTING.md)
 [![X (formerly Twitter) Follow](https://badgen.net/badge/twitter/@zksyncDevs/1DA1F2?icon&label)](https://x.com/zksyncDevs)
 
-Welcome to the zkSync SDK Docs repository.
-This project is for documenting the SDKs available for zkSync development.
+Welcome to the ZKsync SDK Docs repository.
+This project is for documenting the SDKs available for ZKsync development.
 
 ## 🚀 Quick Start
 
@@ -73,6 +73,9 @@ bun run lint:eslint
 
 ## 🤝 Contributions
 
-The zkSync SDK Docs is open for editing by maintainers and contributors of 3rd-party SDKs for zkSync.
-Follow the [recommended guidelines for writing content](https://docs.zksync.io/contributing-to-documentation/documentation-styleguide)
-on the zkSync Docs website.
+The ZKsync SDK Docs is open for editing by maintainers and contributors of 3rd-party SDKs for ZKsync.
+Read through the [Contribution Guidelines](https://docs.zksync.io/build/contributing-to-documentation/contribution-guidelines)
+to learn how to follow recommended development practices.
+
+Follow the [recommended guidelines for writing content](https://docs.zksync.io/build/contributing-to-documentation/documentation-styleguide)
+on the ZKsync Docs website.
