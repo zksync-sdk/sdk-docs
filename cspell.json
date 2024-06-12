@@ -63,6 +63,5 @@
     }
   ],
   "allowCompoundWords": true,
-  "flagWords": ["hte", "hve", "teh", "cna"],
-  "words": ["zkSync"]
+  "flagWords": ["hte", "hve", "teh", "cna"]
 }
