@@ -3,11 +3,12 @@ title: Contract Deployment and Interaction
 description:
 ---
 
-This guide shows you how to deploy a smart contract to zkSync and call its methods using the [`zksync-web3-rs`][repo] SDK.
+This guide shows you how to deploy a smart contract to ZKsync Era
+and call its methods using the [`zksync-web3-rs`][repo] SDK.
 
 This is what we're going to do:
 
-- Deploy, and verify a smart contract on zkSync Era testnet that stores a greeting message.
+- Deploy, and verify a smart contract on %%zk_testnet_name%% that stores a greeting message.
 - Call a `view` method that retrieves the greeting message.
 - Perform a transaction that updates the greeting message.
 
@@ -51,11 +52,11 @@ contract Greeter {
 }
 ```
 
-## Connecting to zkSync Era
+## Connecting to ZKsync Era
 
-To interact with the zkSync network users need to know the endpoint of the operator node. In this tutorial,
-we will be using the _zkSync Era In-Memory Node_ from [`matter-labs/era-test-node`][test-node].
-The test node a zkSync Era node (L2) on port `8011`. You can connect to the zkSync Era
+To interact with the ZKsync Era network users need to know the endpoint of the operator node. In this tutorial,
+we will be using the _ZKsync Era In-Memory Node_ from [`matter-labs/era-test-node`][test-node].
+The test node a ZKsync Era node (L2) on port `8011`. You can connect to the ZKsync Era
 network using the following code:
 
 ```rust
@@ -93,7 +94,7 @@ and place it on `./Greeter.abi`.
 2. The bytecode file contains the compiled binary code of the Greeter smart contract.
 Download it from [here][bin] and place it on `./Greeter.bin`.
 
-3. Use the following snippet to deploy the contract to zkSync Era.
+3. Use the following snippet to deploy the contract to ZKsync Era.
 
 ```rust
 use ethers::abi::Abi;
@@ -121,12 +122,12 @@ let contract_address = {
 };
 ```
 
-**Congratulations! You have deployed and verified a smart contract to zkSync Era Testnet** 🎉
+**Congratulations! You have deployed and verified a smart contract to ZKsync Era Testnet** 🎉
 
 ## Calling the `greet()` view method
 
 In this section, we'll show you how to interact with the Greeter smart contract that you previously
-deployed to zkSync Era. Specifically, we'll demonstrate how to call the `greet()` view method of
+deployed to ZKsync Era. Specifically, we'll demonstrate how to call the `greet()` view method of
 the contract, which allows you to retrieve a greeting message from the blockchain.
 
 The following Rust code snippet demonstrates how to call the `greet()` method and display the returned message:
