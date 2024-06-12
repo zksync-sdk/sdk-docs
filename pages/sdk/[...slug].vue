@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/types';
 import { withoutTrailingSlash } from 'ufo';
+import FaqAccordion from '~/component/faq-accordion.vue';
 
 definePageMeta({
   layout: 'sdk',
@@ -88,6 +89,12 @@ const links = computed(() =>
         v-if="page.body"
         :value="page"
       />
+      <p
+        v-if="page.title === 'FAQ'"
+        class="mt-10"
+      >
+        <FaqAccordion />
+      </p>
 
       <hr v-if="surround?.length" />
 
