@@ -73,6 +73,9 @@ bun run lint:eslint
 
 ## 🤝 Contributions
 
-The ZKsync SDK Docs is open for editing by maintainers and contributors of 3rd-party SDKs for ZKsync.
-Follow the [recommended guidelines for writing content](https://docs.zksync.io/contributing-to-documentation/documentation-styleguide)
-on the ZKsync Docs website.
+The zkSync SDK Docs is open for editing by maintainers and contributors of 3rd-party SDKs for zkSync.
+Read through the [Contribution Guidelines](https://docs.zksync.io/build/contributing-to-documentation/contribution-guidelines)
+to learn how to follow recommended development practices.
+
+Follow the [recommended guidelines for writing content](https://docs.zksync.io/build/contributing-to-documentation/documentation-styleguide)
+on the zkSync Docs website.
