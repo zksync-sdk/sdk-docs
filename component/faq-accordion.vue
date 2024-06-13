@@ -1,34 +1,34 @@
 <script setup lang="ts">
 const items = [
   {
-    label: 'What is zksync Era?',
+    label: 'What is ZKsync Era?',
     content:
-      'zksync Era is a Layer 2 scaling solution for Ethereum, using zk-rollup technology to provide scalable and low-cost transactions while maintaining the security and trust of the Ethereum blockchain.',
+      'ZKsync Era is a Layer 2 scaling solution for Ethereum, using zk-rollup technology to provide scalable and low-cost transactions while maintaining the security and trust of the Ethereum blockchain.',
   },
   {
-    label: 'What are zksync Era SDKs?',
+    label: 'What are ZKsync Era SDKs?',
     content:
-      'zksync Era SDKs are toolkits designed to help developers build decentralized applications (dApps) on the zksync Era network. They provide the necessary libraries and tools to interact with zksync.',
+      'ZKsync Era SDKs are toolkits designed to help developers build decentralized applications (dApps) on the ZKsync Era network. They provide the necessary libraries and tools to interact with ZKsync.',
   },
   {
-    label: 'How do I get started with zksync Era SDKs',
+    label: 'How do I get started with ZKsync Era SDKs?',
     content:
-      'You can start by visiting the official zksync documentation, which provides comprehensive guides, tutorials, and API references to help you begin building dApps on zksync Era',
+      'You can start by visiting the official ZKsync documentation, which provides comprehensive guides, tutorials, and API references to help you begin building dApps on ZKsync Era.',
   },
   {
-    label: 'What types of dApps can be built using zksync Era SDKs?',
+    label: 'What types of dApps can be built using ZKsync Era SDKs?',
     content:
-      'zksync Era SDKs can be used to build a variety of dApps, including DeFi protocols, NFT marketplaces, gaming applications, and more, leveraging ethereum smart contract capabilities.',
+      'ZKsync Era SDKs can be used to build a variety of dApps, including DeFi protocols, NFT marketplaces, gaming applications, and more, leveraging Ethereum smart contract capabilities.',
   },
   {
-    label: 'Can zksync Era be used for NFT applications?',
+    label: 'Can ZKsync Era be used for NFT applications?',
     content:
-      'Yes, zksync Era supports the ERC-721 standard, enabling the development of NFT applications on its platform.',
+      'Yes, ZKsync Era supports the ERC-721 standard, enabling the development of NFT applications on its platform.',
   },
   {
-    label: 'How does zksync Era handle data availability?',
+    label: 'How does ZKsync Era handle data availability?',
     content:
-      'zksync Era uses off-chain storage for most data, with periodic updates and validity proofs submitted to the Ethereum mainnet to ensure data availability and security.',
+      'ZKsync Era uses off-chain storage for most data, with periodic updates and validity proofs submitted to the Ethereum mainnet to ensure data availability and security.',
   },
 ];
 </script>
