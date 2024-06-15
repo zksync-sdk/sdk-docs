@@ -31,7 +31,7 @@ bun run dev -o
 
 ## Troubleshooting Guide
 
-If you encounter issues during the installation, refer to the [troubleshooting guide](https://staging-docs.zksync.io/sdk/troubleshooting/troubleshooting#bun)!
+If you encounter Bun issues, refer to the [troubleshooting guide](https://docs.zksync.io/sdk/troubleshooting#bun)!
 
 ## Lint & Formatting
 
