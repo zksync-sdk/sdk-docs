@@ -1,7 +1,10 @@
 ---
 title: Smart Account Utilities
-description:
+description: Utilities for managing and signing payloads with smart accounts
+tags: ["web3", "blockchain", "zksync", "smart accounts"]
 ---
+
+The Smart Account Utilities in the ZKsync Python SDK provide functions to manage and sign payloads using ECDSA private keys.
 
 ## Functions
 
