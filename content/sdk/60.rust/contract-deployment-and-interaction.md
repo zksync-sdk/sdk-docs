@@ -1,8 +1,8 @@
 ---
 title: Contract Deployment and Interaction
-description:
+description: Methods and interfaces for deploying smart contracts on ZKsync Era
+tags: ["zksync", "contracts", "deployment", "rust", "sdk"]
 ---
-
 This guide shows you how to deploy a smart contract to ZKsync Era
 and call its methods using the [`zksync-web3-rs`][repo] SDK.
 
