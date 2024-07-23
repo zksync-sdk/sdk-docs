@@ -122,7 +122,9 @@ let contract_address = {
 };
 ```
 
-**Congratulations! You have deployed and verified a smart contract to ZKsync Era Testnet** 🎉
+::callout
+Congratulations! You have deployed and verified a smart contract to ZKsync Era Testnet 🎉
+::
 
 ## Calling the `greet()` view method
 
