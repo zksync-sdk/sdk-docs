@@ -296,3 +296,7 @@ async fn interact_with_contract() {
 [test-node]: https://github.com/matter-labs/era-test-node/
 [abi]: https://raw.githubusercontent.com/lambdaclass/zksync-web3-rs/7ae7bec0323d878beac2b74f00256f8589b4a206/examples/contract-deployment/Greeter.abi
 [bin]: https://raw.githubusercontent.com/lambdaclass/zksync-web3-rs/7ae7bec0323d878beac2b74f00256f8589b4a206/examples/contract-deployment/Greeter.bin
+
+::callout{icon="i-heroicons-exclamation-triangle" color="amber"}
+For development and testing, it is recommended to use burner wallets. Avoid using real private keys to prevent security risks.
+::
