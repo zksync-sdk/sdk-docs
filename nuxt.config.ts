@@ -1,16 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: [['@matterlabs/docs-nuxt-template']],
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/eslint', '@nuxtjs/seo'],
+  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/eslint', '@nuxtjs/seo', 'nuxt-gtag'],
   site: {
     name: 'ZKsync SDK Docs',
-    url: process.env.NUXT_SITE_ENV ? 'https://staging-sdk-docs.zksync.io' : 'https://docs.zksync.io',
-    // disable indexing for sdk staging sites, sdk gets bundled into zksync-docs
-    indexable: false,
+    url: process.env.NUXT_SITE_ENV ? 'https://staging-sdk-docs.zksync.io' : 'https://sdk.zksync.io',
   },
   runtimeConfig: {
     public: {
       app: 'sdk',
     },
   },
+  $production: process.env.NUXT_SITE_ENV
+    ? {}
+    : {
+        gtag: {
+          id: 'G-32HFNYFHS9',
+        },
+      },
 });

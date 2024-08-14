@@ -11,17 +11,17 @@ useHead({
   },
 });
 
+const seoDescription =
+  'ZKsync SDK Docs is a collection of guides, references and resources on building with ZKsync SDKs.';
+
 useSeoMeta({
   titleTemplate: `%s - ${seo?.siteName}`,
   ogSiteName: seo?.siteName,
   ogUrl: 'https://docs.zksync.io/',
   ogImageAlt: 'Hyperscaling Ethereum with ZK tech.',
-  ogDescription:
-    'ZKsync Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and ZK Chains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.',
-  description:
-    'ZKsync Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and ZK Chains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.',
-  twitterDescription:
-    'ZKsync Docs bring you all information you need about our protocol, APIs, SDKs, ZK Stack, and ZK Chains. Start with our guides and tutorials, or go deep into our architecture and protocol specification.',
+  ogDescription: seoDescription,
+  description: seoDescription,
+  twitterDescription: seoDescription,
   twitterTitle: `%s`,
   twitterCard: 'summary_large_image',
   twitterSite: '@zksync',
@@ -32,7 +32,7 @@ useSeoMeta({
 defineOgImage({
   component: 'OgImageZK',
   title: seo?.siteName,
-  description: 'Access detailed guides, references and resources that will help you build with ZKsync Era.',
+  description: 'Access detailed guides, references and resources that will help you build with ZKsync SDKs.',
 });
 </script>
 
