@@ -11,6 +11,13 @@ export default defineNuxtConfig({
       app: 'sdk',
     },
   },
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        trailingSlash: 'remove',
+      },
+    },
+  },
   $production: process.env.NUXT_SITE_ENV
     ? {}
     : {
