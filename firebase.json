@@ -1,6 +1,244 @@
 {
   "hosting": {
+    "trailingSlash": false,
     "public": ".output/public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "source": "/go/getting-started",
+        "destination": "/go/guides/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/go/features",
+        "destination": "/go/guides/features",
+        "type": 301
+      },
+      {
+        "source": "/go/accounts-l1-l2",
+        "destination": "/go/guides/accounts-l1-l2",
+        "type": 301
+      },
+      {
+        "source": "/go/clients",
+        "destination": "/go/api/clients/baseclient",
+        "type": 301
+      },
+      {
+        "source": "/go/types/clients",
+        "destination": "/go/api/clients/types",
+        "type": 301
+      },
+      {
+        "source": "/go/smart-account-utils",
+        "destination": "/go/api/accounts/smart-account-utils",
+        "type": 301
+      },
+      {
+        "source": "/go/types/accounts",
+        "destination": "/go/api/accounts/types",
+        "type": 301
+      },
+      {
+        "source": "/go/types/eip712",
+        "destination": "/go/api/eip712/eip712",
+        "type": 301
+      },
+      {
+        "source": "/go/contracts",
+        "destination": "/go/api/contracts/contracts",
+        "type": 301
+      },
+      {
+        "source": "/go/utils",
+        "destination": "/go/api/utilities/utils",
+        "type": 301
+      },
+      {
+        "source": "/go/paymaster-utils",
+        "destination": "/go/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/go/types/types",
+        "destination": "/go/api/types",
+        "type": 301
+      },
+      {
+        "source": "/go/accounts",
+        "destination": "/go/api/accounts/introduction",
+        "type": 301
+      },
+      {
+        "source": "/go/types/intro",
+        "destination": "/go/api/types",
+        "type": 301
+      },
+      {
+        "source": "/python/getting-started",
+        "destination": "/python/introduction/overview",
+        "type": 301
+      },
+      {
+        "source": "/python/why-python-sdk",
+        "destination": "/python/introduction/why-zksync-python",
+        "type": 301
+      },
+      {
+        "source": "/python/quickstart/installation-python",
+        "destination": "/python/introduction/installation",
+        "type": 301
+      },
+      {
+        "source": "/python/why-python-sdk",
+        "destination": "/python/introduction/why-zksync-python",
+        "type": 301
+      },
+      {
+        "source": "/python/quickstart/getting-started",
+        "destination": "/python/guides/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/python/quickstart/platform-compatibility-python",
+        "destination": "/python/introduction/overview",
+        "type": 301
+      },
+      {
+        "source": "/python/features",
+        "destination": "/python/guides/features",
+        "type": 301
+      },
+      {
+        "source": "/python/accounts-l1-l2",
+        "destination": "/python/guides/accounts-l1-l2",
+        "type": 301
+      },
+      {
+        "source": "/python/providers",
+        "destination": "/python/api/providers/provider",
+        "type": 301
+      },
+      {
+        "source": "/python/accounts",
+        "destination": "/python/api/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/python/smart-account-utils",
+        "destination": "/python/api/accounts/smart-account-utils",
+        "type": 301
+      },
+      {
+        "source": "/python/utils",
+        "destination": "/python/api/utilities/utils",
+        "type": 301
+      },
+      {
+        "source": "/python/paymaster-utils",
+        "destination": "/python/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/python/types",
+        "destination": "/python/api/types",
+        "type": 301
+      },
+      {
+        "source": "/python/contracts",
+        "destination": "/python/api/contracts/contracts",
+        "type": 301
+      },
+      {
+        "source": "/java/getting-started",
+        "destination": "/java/introduction/overview",
+        "type": 301
+      },
+      {
+        "source": "/java/features",
+        "destination": "/java/guides/features",
+        "type": 301
+      },
+      {
+        "source": "/java/accounts-l1-l2",
+        "destination": "/java/guides/accounts-l1-l2",
+        "type": 301
+      },
+      {
+        "source": "/java/providers",
+        "destination": "/java/api/providers/provider",
+        "type": 301
+      },
+      {
+        "source": "/java/accounts",
+        "destination": "/java/api/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/java/contracts",
+        "destination": "/java/api/contract/contracts",
+        "type": 301
+      },
+      {
+        "source": "/java/utils",
+        "destination": "/java/api/utilities/utils",
+        "type": 301
+      },
+      {
+        "source": "/java/paymaster-utils",
+        "destination": "/java/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/java/types",
+        "destination": "/java/api/types",
+        "type": 301
+      },
+      {
+        "source": "/swift/getting-started",
+        "destination": "/swift/introduction/overview",
+        "type": 301
+      },
+      {
+        "source": "/swift/features",
+        "destination": "/swift/guides/features",
+        "type": 301
+      },
+      {
+        "source": "/swift/accounts-l1-l2",
+        "destination": "/swift/guides/accounts-l1-l2",
+        "type": 301
+      },
+      {
+        "source": "/swift/clients",
+        "destination": "/swift/api/clients/client",
+        "type": 301
+      },
+      {
+        "source": "/swift/accounts",
+        "destination": "/swift/api/accounts/basedeployer",
+        "type": 301
+      },
+      {
+        "source": "/swift/contracts",
+        "destination": "/swift/api/contracts/contract",
+        "type": 301
+      },
+      {
+        "source": "/swift/utils",
+        "destination": "/swift/api/utilities/utils",
+        "type": 301
+      },
+      {
+        "source": "/swift/paymaster-utils",
+        "destination": "/swift/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/swift/types",
+        "destination": "/swift/api/types",
+        "type": 301
+      }
+    ]
   }
 }
