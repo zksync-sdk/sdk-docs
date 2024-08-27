@@ -41,17 +41,17 @@
       },
       {
         "source": "/go/types/eip712",
-        "destination": "/go/api/eip712/eip712",
+        "destination": "/go/api/eip712",
         "type": 301
       },
       {
         "source": "/go/contracts",
-        "destination": "/go/api/contracts/contracts",
+        "destination": "/go/api/contracts",
         "type": 301
       },
       {
         "source": "/go/utils",
-        "destination": "/go/api/utilities/utils",
+        "destination": "/go/api/utilities",
         "type": 301
       },
       {
@@ -66,7 +66,7 @@
       },
       {
         "source": "/go/accounts",
-        "destination": "/go/api/accounts/introduction",
+        "destination": "/go/api/accounts",
         "type": 301
       },
       {
@@ -76,22 +76,22 @@
       },
       {
         "source": "/python/getting-started",
-        "destination": "/python/introduction/overview",
+        "destination": "/python",
         "type": 301
       },
       {
         "source": "/python/why-python-sdk",
-        "destination": "/python/introduction/why-zksync-python",
+        "destination": "/python/why-zksync-python",
         "type": 301
       },
       {
         "source": "/python/quickstart/installation-python",
-        "destination": "/python/introduction/installation",
+        "destination": "/python/installation",
         "type": 301
       },
       {
         "source": "/python/why-python-sdk",
-        "destination": "/python/introduction/why-zksync-python",
+        "destination": "/python/why-zksync-python",
         "type": 301
       },
       {
@@ -101,7 +101,7 @@
       },
       {
         "source": "/python/quickstart/platform-compatibility-python",
-        "destination": "/python/introduction/overview",
+        "destination": "/python",
         "type": 301
       },
       {
@@ -116,7 +116,7 @@
       },
       {
         "source": "/python/providers",
-        "destination": "/python/api/providers/provider",
+        "destination": "/python/api/providers",
         "type": 301
       },
       {
@@ -131,7 +131,7 @@
       },
       {
         "source": "/python/utils",
-        "destination": "/python/api/utilities/utils",
+        "destination": "/python/api/utilities",
         "type": 301
       },
       {
@@ -146,12 +146,12 @@
       },
       {
         "source": "/python/contracts",
-        "destination": "/python/api/contracts/contracts",
+        "destination": "/python/api/contracts",
         "type": 301
       },
       {
         "source": "/java/getting-started",
-        "destination": "/java/introduction/overview",
+        "destination": "/java",
         "type": 301
       },
       {
@@ -166,7 +166,7 @@
       },
       {
         "source": "/java/providers",
-        "destination": "/java/api/providers/provider",
+        "destination": "/java/api/providers",
         "type": 301
       },
       {
@@ -176,12 +176,12 @@
       },
       {
         "source": "/java/contracts",
-        "destination": "/java/api/contract/contracts",
+        "destination": "/java/api/contract",
         "type": 301
       },
       {
         "source": "/java/utils",
-        "destination": "/java/api/utilities/utils",
+        "destination": "/java/api/utilities",
         "type": 301
       },
       {
@@ -196,7 +196,7 @@
       },
       {
         "source": "/swift/getting-started",
-        "destination": "/swift/introduction/overview",
+        "destination": "/swift",
         "type": 301
       },
       {
@@ -211,7 +211,7 @@
       },
       {
         "source": "/swift/clients",
-        "destination": "/swift/api/clients/client",
+        "destination": "/swift/api/clients",
         "type": 301
       },
       {
@@ -221,12 +221,12 @@
       },
       {
         "source": "/swift/contracts",
-        "destination": "/swift/api/contracts/contract",
+        "destination": "/swift/api/contracts",
         "type": 301
       },
       {
         "source": "/swift/utils",
-        "destination": "/swift/api/utilities/utils",
+        "destination": "/swift/api/utilities",
         "type": 301
       },
       {
