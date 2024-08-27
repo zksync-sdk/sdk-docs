@@ -5,6 +5,16 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
       {
+        "source": "/js/ethers/installation-js",
+        "destination": "/js/ethers/installation",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/compatibility-js",
+        "destination": "/js/ethers/compatibility",
+        "type": 301
+      },
+      {
         "source": "/go/getting-started",
         "destination": "/go/guides",
         "type": 301
