@@ -25,9 +25,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@matterlabs/docs-nuxt-template": "2.7.0",
+    "@matterlabs/docs-nuxt-template": "2.7.1",
     "@nuxt/content": "^2.13.2",
-    "@nuxt/eslint": "^0.3.13",
+    "@nuxt/eslint": "^0.5.3",
     "@nuxt/fonts": "^0.7.2",
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.18.4",
@@ -44,7 +44,7 @@
     "build": "nuxt generate",
     "dev": "DEV=true nuxt dev",
     "preview": "nuxt preview",
-    "lint:spelling": "cspell **/*.md --config=./cspell.json",
+    "lint:spelling": "cspell lint **/*.md --config=./cspell.json",
     "lint:markdown": "markdownlint-cli2 \"content/**/*.md\" --config \".markdownlint.json\"",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",

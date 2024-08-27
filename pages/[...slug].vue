@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { ParsedContent } from '@nuxt/content/types';
 import { withoutTrailingSlash } from 'ufo';
 
 const route = useRoute();
+const category = useCategory();
 const { toc, seo } = useAppConfig();
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne());
@@ -33,8 +33,6 @@ defineOgImage({
   title: page.value.title,
   description: page.value.description,
 });
-
-const headline = computed(() => findPageHeadline(page.value as ParsedContent));
 
 const links = computed(() =>
   [
@@ -72,23 +70,29 @@ const links = computed(() =>
 
 <template>
   <UPage v-if="page">
-    <UPageHeader
-      :title="page.title"
-      :description="page.description"
-      :links="page.links"
-      :headline="headline"
-    />
-
-    <UPageBody prose>
-      <ContentRenderer
-        v-if="page.body"
-        :value="page"
+    <article>
+      <span
+        id="docsearch-lv0"
+        hidden
+        >{{ category }}</span
+      >
+      <UPageHeader
+        :headline="category"
+        :title="page.title"
+        :description="page.description"
+        :links="page.links"
       />
-      <hr v-if="surround?.length" />
 
-      <UContentSurround :surround="surround" />
-    </UPageBody>
+      <UPageBody prose>
+        <ContentRenderer
+          v-if="page.body"
+          :value="page"
+        />
+        <hr v-if="surround?.length" />
 
+        <UContentSurround :surround="surround" />
+      </UPageBody>
+    </article>
     <template
       v-if="page.toc !== false"
       #right
