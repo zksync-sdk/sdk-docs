@@ -6,7 +6,7 @@
     "redirects": [
       {
         "source": "/go/getting-started",
-        "destination": "/go/guides/getting-started",
+        "destination": "/go/guides",
         "type": 301
       },
       {
@@ -96,7 +96,7 @@
       },
       {
         "source": "/python/quickstart/getting-started",
-        "destination": "/python/guides/getting-started",
+        "destination": "/python/guides",
         "type": 301
       },
       {
