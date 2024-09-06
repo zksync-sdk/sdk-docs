@@ -25,7 +25,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@matterlabs/docs-nuxt-template": "2.8.4",
+    "@matterlabs/docs-nuxt-template": "2.8.5",
     "@iconify-json/heroicons": "^1.2.0",
     "@iconify-json/simple-icons": "^1.2.1",
     "@iconify-json/vscode-icons": "^1.2.0",
