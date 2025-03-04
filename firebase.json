@@ -5,6 +5,26 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
       {
+        "source": "/",
+        "destination": "https://docs.zksync.io/zksync-era/sdk",
+        "type": 301
+      },
+      {
+        "source": "/faq",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/faq",
+        "type": 301
+      },
+      {
+        "source": "/glossary",
+        "destination": "https://docs.zksync.io/zksync-protocol/glossary",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers",
+        "type": 301
+      },
+      {
         "source": "/js/ethers/installation-js",
         "destination": "/js/ethers/installation",
         "type": 301
@@ -15,8 +35,298 @@
         "type": 301
       },
       {
+        "source": "/js/ethers/installation",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/installation",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/compatibility",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/compatibility",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/guides",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/guides",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/guides/features",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/guides/features",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/guides/accounts-l1-l2",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/guides/accounts-l1-l2",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/guides/front-end",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/guides/front-end",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/guides/migration",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/guides/migration",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/types",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/types",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/providers",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/providers",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/providers/provider",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/providers/provider",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/providers/web3provider",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/providers/web3provider",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/accounts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/accounts",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/accounts/wallet",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/accounts/signer",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/accounts/signer",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/accounts/l1signer",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/accounts/l1signer",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/accounts/l2voidsigner",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/accounts/l2voidsigner",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/accounts/l1voidsigner",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/accounts/l1voidsigner",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/accounts/eip712signer",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/accounts/eip712signer",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/accounts/smartaccount",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/accounts/smartaccount",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/accounts/smartaccount-factories",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/accounts/smartaccount-factories",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/contract",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/contract",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/contract/contract-factory",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/contract/contract-factory",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/utilities",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/utilities",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/utilities/paymaster-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v5/utilities/smart-account-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v5/utilities/smart-account-utils",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/types",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/types",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/providers",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/providers",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/providers/provider",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/providers/provider",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/providers/browser-provider",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/providers/browser-provider",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/accounts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/accounts",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/accounts/wallet",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/accounts/signer",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/accounts/signer",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/accounts/l1signer",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/accounts/l1signer",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/accounts/l2voidsigner",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/accounts/l2voidsigner",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/accounts/l1voidsigner",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/accounts/l1voidsigner",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/accounts/eip712signer",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/accounts/eip712signer",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/accounts/smartaccount",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/accounts/smartaccount",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/accounts/smartaccount-factories",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/accounts/smartaccount-factories",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/contract",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/contract",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/contract/contract-factory",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/contract/contract-factory",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/utilities",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/utilities",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/utilities/paymaster-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/js/ethers/api/v6/utilities/smart-account-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/ethers/api/v6/utilities/smart-account-utils",
+        "type": 301
+      },
+      {
+        "source": "/js/web3js",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/web3js",
+        "type": 301
+      },
+      {
+        "source": "/js/web3js/getting-started",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/web3js/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/js/web3js/rpc",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/web3js/rpc",
+        "type": 301
+      },
+      {
+        "source": "/js/web3js/constants-types-utilities",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/web3js/constants-types-utilities",
+        "type": 301
+      },
+      {
+        "source": "/js/web3js/wallet",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/web3js/wallet",
+        "type": 301
+      },
+      {
+        "source": "/js/web3js/custom-data",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/web3js/custom-data",
+        "type": 301
+      },
+      {
+        "source": "/js/web3js/paymasters",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/web3js/paymasters",
+        "type": 301
+      },
+      {
+        "source": "/js/web3js/contracts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/web3js/contracts",
+        "type": 301
+      },
+      {
+        "source": "/js/web3js/smart-accounts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/js/web3js/smart-accounts",
+        "type": 301
+      },
+      {
+        "source": "/go",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go",
+        "type": 301
+      },
+      {
+        "source": "/go/installation",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/installation",
+        "type": 301
+      },
+      {
+        "source": "/go/guides",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/guides",
+        "type": 301
+      },
+      {
         "source": "/go/getting-started",
         "destination": "/go/guides",
+        "type": 301
+      },
+      {
+        "source": "/go/guides/features",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/guides/features",
         "type": 301
       },
       {
@@ -25,48 +335,28 @@
         "type": 301
       },
       {
+        "source": "/go/guides/accounts-l1-l2",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/guides/accounts-l1-l2",
+        "type": 301
+      },
+      {
         "source": "/go/accounts-l1-l2",
         "destination": "/go/guides/accounts-l1-l2",
         "type": 301
       },
       {
-        "source": "/go/clients",
-        "destination": "/go/api/clients/baseclient",
+        "source": "/go/guides/migration-v0-v1",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/guides/migration-v0-v1",
         "type": 301
       },
       {
-        "source": "/go/types/clients",
-        "destination": "/go/api/clients/types",
+        "source": "/go/api",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api",
         "type": 301
       },
       {
-        "source": "/go/smart-account-utils",
-        "destination": "/go/api/accounts/smart-account-utils",
-        "type": 301
-      },
-      {
-        "source": "/go/types/accounts",
-        "destination": "/go/api/accounts/types",
-        "type": 301
-      },
-      {
-        "source": "/go/types/eip712",
-        "destination": "/go/api/eip712",
-        "type": 301
-      },
-      {
-        "source": "/go/contracts",
-        "destination": "/go/api/contracts",
-        "type": 301
-      },
-      {
-        "source": "/go/utils",
-        "destination": "/go/api/utilities",
-        "type": 301
-      },
-      {
-        "source": "/go/paymaster-utils",
-        "destination": "/go/api/utilities/paymaster-utils",
+        "source": "/go/api/types",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/types",
         "type": 301
       },
       {
@@ -75,13 +365,143 @@
         "type": 301
       },
       {
+        "source": "/go/types/intro",
+        "destination": "/go/api/types",
+        "type": 301
+      },
+      {
+        "source": "/go/api/clients",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/clients",
+        "type": 301
+      },
+      {
+        "source": "/go/clients",
+        "destination": "/go/api/clients",
+        "type": 301
+      },
+      {
+        "source": "/go/api/clients/client",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/clients/client",
+        "type": 301
+      },
+      {
+        "source": "/go/api/clients/types",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/clients/types",
+        "type": 301
+      },
+      {
+        "source": "/go/types/clients",
+        "destination": "/go/api/clients/types",
+        "type": 301
+      },
+      {
+        "source": "/go/api/accounts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts",
+        "type": 301
+      },
+      {
         "source": "/go/accounts",
         "destination": "/go/api/accounts",
         "type": 301
       },
       {
-        "source": "/go/types/intro",
-        "destination": "/go/api/types",
+        "source": "/go/api/accounts/signer",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts/signer",
+        "type": 301
+      },
+      {
+        "source": "/go/api/accounts/deployer",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts/deployer",
+        "type": 301
+      },
+      {
+        "source": "/go/api/accounts/wallet",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/go/api/accounts/walletl1",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts/walletl1",
+        "type": 301
+      },
+      {
+        "source": "/go/api/accounts/walletl2",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts/walletl2",
+        "type": 301
+      },
+      {
+        "source": "/go/api/accounts/smartaccount",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts/smartaccount",
+        "type": 301
+      },
+      {
+        "source": "/go/api/accounts/smartaccount-factories",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts/smartaccount-factories",
+        "type": 301
+      },
+      {
+        "source": "/go/api/accounts/smart-account-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts/smart-account-utils",
+        "type": 301
+      },
+      {
+        "source": "/go/smart-account-utils",
+        "destination": "/go/api/accounts/smart-account-utils",
+        "type": 301
+      },
+      {
+        "source": "/go/api/accounts/types",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/accounts/types",
+        "type": 301
+      },
+      {
+        "source": "/go/types/accounts",
+        "destination": "/go/api/accounts/types",
+        "type": 301
+      },
+      {
+        "source": "/go/api/eip712",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/eip712",
+        "type": 301
+      },
+      {
+        "source": "/go/types/eip712",
+        "destination": "/go/api/eip712",
+        "type": 301
+      },
+      {
+        "source": "/go/api/contracts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/contracts",
+        "type": 301
+      },
+      {
+        "source": "/go/contracts",
+        "destination": "/go/api/contracts",
+        "type": 301
+      },
+      {
+        "source": "/go/api/utilities",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/utilities",
+        "type": 301
+      },
+      {
+        "source": "/go/utils",
+        "destination": "/go/api/utilities",
+        "type": 301
+      },
+      {
+        "source": "/go/api/utilities/paymaster-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/go/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/go/paymaster-utils",
+        "destination": "/go/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/python",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python",
         "type": 301
       },
       {
@@ -90,8 +510,13 @@
         "type": 301
       },
       {
-        "source": "/python/why-python-sdk",
-        "destination": "/python/why-zksync-python",
+        "source": "/python/quickstart/platform-compatibility-python",
+        "destination": "/python",
+        "type": 301
+      },
+      {
+        "source": "/python/installation",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/installation",
         "type": 301
       },
       {
@@ -100,8 +525,8 @@
         "type": 301
       },
       {
-        "source": "/python/why-python-sdk",
-        "destination": "/python/why-zksync-python",
+        "source": "/python/guides",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/guides",
         "type": 301
       },
       {
@@ -110,8 +535,8 @@
         "type": 301
       },
       {
-        "source": "/python/quickstart/platform-compatibility-python",
-        "destination": "/python",
+        "source": "/python/guides/features",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/guides/features",
         "type": 301
       },
       {
@@ -120,33 +545,23 @@
         "type": 301
       },
       {
+        "source": "/python/guides/accounts-l1-l2",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/guides/accounts-l1-l2",
+        "type": 301
+      },
+      {
         "source": "/python/accounts-l1-l2",
         "destination": "/python/guides/accounts-l1-l2",
         "type": 301
       },
       {
-        "source": "/python/providers",
-        "destination": "/python/api/providers",
+        "source": "/python/api",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api",
         "type": 301
       },
       {
-        "source": "/python/accounts",
-        "destination": "/python/api/accounts/wallet",
-        "type": 301
-      },
-      {
-        "source": "/python/smart-account-utils",
-        "destination": "/python/api/accounts/smart-account-utils",
-        "type": 301
-      },
-      {
-        "source": "/python/utils",
-        "destination": "/python/api/utilities",
-        "type": 301
-      },
-      {
-        "source": "/python/paymaster-utils",
-        "destination": "/python/api/utilities/paymaster-utils",
+        "source": "/python/api/types",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/types",
         "type": 301
       },
       {
@@ -155,8 +570,103 @@
         "type": 301
       },
       {
+        "source": "/python/api/providers",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/providers",
+        "type": 301
+      },
+      {
+        "source": "/python/providers",
+        "destination": "/python/api/providers",
+        "type": 301
+      },
+      {
+        "source": "/python/api/providers/provider",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/providers/provider",
+        "type": 301
+      },
+      {
+        "source": "/python/api/accounts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/accounts",
+        "type": 301
+      },
+      {
+        "source": "/python/api/accounts/wallet",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/python/accounts",
+        "destination": "/python/api/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/python/api/accounts/ethsigner",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/accounts/ethsigner",
+        "type": 301
+      },
+      {
+        "source": "/python/api/accounts/smartaccount",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/accounts/smartaccount",
+        "type": 301
+      },
+      {
+        "source": "/python/api/accounts/smart-account-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/accounts/smart-account-utils",
+        "type": 301
+      },
+      {
+        "source": "/python/smart-account-utils",
+        "destination": "/python/api/accounts/smart-account-utils",
+        "type": 301
+      },
+      {
+        "source": "/python/api/accounts/smartaccount-factories",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/accounts/smartaccount-factories",
+        "type": 301
+      },
+      {
+        "source": "/python/api/contracts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/contracts",
+        "type": 301
+      },
+      {
         "source": "/python/contracts",
         "destination": "/python/api/contracts",
+        "type": 301
+      },
+      {
+        "source": "/python/api/utilities",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/utilities",
+        "type": 301
+      },
+      {
+        "source": "/python/utils",
+        "destination": "/python/api/utilities",
+        "type": 301
+      },
+      {
+        "source": "/python/api/utilities/paymaster-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/python/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/python/paymaster-utils",
+        "destination": "/python/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/python/why-python-sdk",
+        "destination": "/python/why-zksync-python",
+        "type": 301
+      },
+      {
+        "source": "/python/why-python-sdk",
+        "destination": "/python/why-zksync-python",
+        "type": 301
+      },
+      {
+        "source": "/java",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java",
         "type": 301
       },
       {
@@ -165,8 +675,28 @@
         "type": 301
       },
       {
+        "source": "/java/installation",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/installation",
+        "type": 301
+      },
+      {
+        "source": "/java/guides",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/guides",
+        "type": 301
+      },
+      {
+        "source": "/java/guides/features",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/guides/features",
+        "type": 301
+      },
+      {
         "source": "/java/features",
         "destination": "/java/guides/features",
+        "type": 301
+      },
+      {
+        "source": "/java/guides/accounts-l1-l2",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/guides/accounts-l1-l2",
         "type": 301
       },
       {
@@ -175,28 +705,13 @@
         "type": 301
       },
       {
-        "source": "/java/providers",
-        "destination": "/java/api/providers",
+        "source": "/java/api",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api",
         "type": 301
       },
       {
-        "source": "/java/accounts",
-        "destination": "/java/api/accounts/wallet",
-        "type": 301
-      },
-      {
-        "source": "/java/contracts",
-        "destination": "/java/api/contract",
-        "type": 301
-      },
-      {
-        "source": "/java/utils",
-        "destination": "/java/api/utilities",
-        "type": 301
-      },
-      {
-        "source": "/java/paymaster-utils",
-        "destination": "/java/api/utilities/paymaster-utils",
+        "source": "/java/api/types",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/types",
         "type": 301
       },
       {
@@ -205,8 +720,108 @@
         "type": 301
       },
       {
+        "source": "/java/api/providers",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/providers",
+        "type": 301
+      },
+      {
+        "source": "/java/providers",
+        "destination": "/java/api/providers",
+        "type": 301
+      },
+      {
+        "source": "/java/api/providers/provider",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/providers/provider",
+        "type": 301
+      },
+      {
+        "source": "/java/api/accounts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/accounts",
+        "type": 301
+      },
+      {
+        "source": "/java/api/accounts/wallet",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/java/accounts",
+        "destination": "/java/api/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/java/api/accounts/ethsigner",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/accounts/ethsigner",
+        "type": 301
+      },
+      {
+        "source": "/java/api/accounts/smartaccount",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/accounts/smartaccount",
+        "type": 301
+      },
+      {
+        "source": "/java/api/accounts/smart-account-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/accounts/smart-account-utils",
+        "type": 301
+      },
+      {
+        "source": "/java/api/accounts/smartaccount-factories",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/accounts/smartaccount-factories",
+        "type": 301
+      },
+      {
+        "source": "/java/api/contract",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/contract",
+        "type": 301
+      },
+      {
+        "source": "/java/contracts",
+        "destination": "/java/api/contract",
+        "type": 301
+      },
+      {
+        "source": "/java/api/utilities",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/utilities",
+        "type": 301
+      },
+      {
+        "source": "/java/utils",
+        "destination": "/java/api/utilities",
+        "type": 301
+      },
+      {
+        "source": "/java/api/utilities/paymaster-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/java/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/java/paymaster-utils",
+        "destination": "/java/api/utilities/paymaster-utils",
+        "type": 301
+      },
+      {
+        "source": "/swift",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift",
+        "type": 301
+      },
+      {
         "source": "/swift/getting-started",
         "destination": "/swift",
+        "type": 301
+      },
+      {
+        "source": "/swift/installation",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/installation",
+        "type": 301
+      },
+      {
+        "source": "/swift/guides/getting-started",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/guides/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/swift/guides/features",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/guides/features",
         "type": 301
       },
       {
@@ -215,8 +830,33 @@
         "type": 301
       },
       {
+        "source": "/swift/guides/accounts-l1-l2",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/guides/accounts-l1-l2",
+        "type": 301
+      },
+      {
         "source": "/swift/accounts-l1-l2",
         "destination": "/swift/guides/accounts-l1-l2",
+        "type": 301
+      },
+      {
+        "source": "/swift/api",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api",
+        "type": 301
+      },
+      {
+        "source": "/swift/api/types",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/types",
+        "type": 301
+      },
+      {
+        "source": "/swift/types",
+        "destination": "/swift/api/types",
+        "type": 301
+      },
+      {
+        "source": "/swift/api/clients",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/clients",
         "type": 301
       },
       {
@@ -225,8 +865,38 @@
         "type": 301
       },
       {
+        "source": "/swift/api/clients/client",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/clients/client",
+        "type": 301
+      },
+      {
+        "source": "/swift/api/accounts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/accounts",
+        "type": 301
+      },
+      {
+        "source": "/swift/api/accounts/wallet",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/accounts/wallet",
+        "type": 301
+      },
+      {
+        "source": "/swift/api/accounts/basedeployer",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/accounts/basedeployer",
+        "type": 301
+      },
+      {
         "source": "/swift/accounts",
         "destination": "/swift/api/accounts/basedeployer",
+        "type": 301
+      },
+      {
+        "source": "/swift/api/accounts/ethsigner",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/accounts/ethsigner",
+        "type": 301
+      },
+      {
+        "source": "/swift/api/contracts",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/contracts",
         "type": 301
       },
       {
@@ -235,8 +905,18 @@
         "type": 301
       },
       {
+        "source": "/swift/api/utilities",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/utilities",
+        "type": 301
+      },
+      {
         "source": "/swift/utils",
         "destination": "/swift/api/utilities",
+        "type": 301
+      },
+      {
+        "source": "/swift/api/utilities/paymaster-utils",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/swift/api/utilities/paymaster-utils",
         "type": 301
       },
       {
@@ -245,8 +925,13 @@
         "type": 301
       },
       {
-        "source": "/swift/types",
-        "destination": "/swift/api/types",
+        "source": "/rust",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/rust",
+        "type": 301
+      },
+      {
+        "source": "/rust/contract-deployment-and-interaction",
+        "destination": "https://docs.zksync.io/zksync-era/sdk/rust/contract-deployment-and-interaction",
         "type": 301
       }
     ]
